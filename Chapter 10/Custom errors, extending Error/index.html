@@ -9,21 +9,21 @@
 
   <body>
     <script>
-      function f() {
-        try {
-          alert('начало');
-          throw new Error('ошибка');
-        } catch (e) {
-          // ...
-          if ('не могу обработать ошибку') {
-            throw e;
-          }
-        } finally {
-          alert('очистка!');
+      class FormatError extends SyntaxError {
+        constructor(message) {
+          super(message);
+          this.name = this.constructor.name;
         }
       }
 
-      f(); // очистка!
+      let err = new FormatError('ошибка форматирования');
+
+      alert(err.message); // ошибка форматирования
+      alert(err.name); // FormatError
+      alert(err.stack); // stack
+
+      alert(err instanceof FormatError); // true
+      alert(err instanceof SyntaxError); // true (потому что наследует от SyntaxError)
     </script>
   </body>
 </html>
