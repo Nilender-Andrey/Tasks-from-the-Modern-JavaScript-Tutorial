@@ -1,2 +1,2 @@
-# Tasks-from-the-Modern-JavaScript-Tutorial
-https://learn.javascript.ru/
+Задачи из второй части учебника
+Номер части -> Название главы -> Задачи
