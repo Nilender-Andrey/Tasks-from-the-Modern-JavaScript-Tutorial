@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        height: 2000px;
+        padding: 20px;
+      }
+
+      .wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+
+        background: rgba(0, 0, 255, 0.301);
+      }
+
+      form {
+        background-color: white;
+        width: 300px;
+        height: 120px;
+
+        border: 1px solid black;
+        padding: 5px 5px 5px 60px;
+
+        background: url(https://js.cx/clipart/key.png) 3px 5px white no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Текст Текст Текст</p>
+    <button onclick="alert('Эта кнопка не должна работать')">
+      Эта кнопка не работает
+    </button>
+    <p>Текст Текст Текст</p>
+
+    <div class="wrapper">
+      <form>
+        <h3>Добро пожаловать!</h3>
+
+        <table>
+          <tr>
+            <td>Логин</td>
+            <td>
+              <input />
+            </td>
+          </tr>
+          <tr>
+            <td>Пароль</td>
+            <td>
+              <input />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="Войти" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

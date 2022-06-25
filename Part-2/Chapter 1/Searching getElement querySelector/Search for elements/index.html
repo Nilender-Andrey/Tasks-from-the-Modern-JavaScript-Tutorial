@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1. Таблицу с id="age-table".
+
+      let table = document.getElementById('age-table');
+
+      // 2. Все элементы label внутри этой таблицы (их три).
+      let labels = table.querySelectorAll('label');
+
+      // 3. Первый td в этой таблице (со словом «Age»).
+      let firstTd = table.querySelectorAll('#age-table td');
+      // let firstTd = document.querySelector('td');
+
+      // 4. Форму form с именем name="search".
+      let form = document.querySelector('form[name="search"]');
+
+      // 5. Первый input в этой форме.
+      let firstInput = form.querySelector('input');
+
+      // 6. Последний input в этой форме.
+      let inputs = form.querySelectorAll('input');
+      let lastInput = inputs[inputs.length - 1];
+    </script>
+  </body>
+</html>
